@@ -8,27 +8,27 @@ const positions = [
   {
     title: 'Coder',
     icon: Code,
-    description: 'Build and maintain the tools and platforms that power Elite. Work with cutting-edge tech to create seamless experiences for our creators and team.',
+    description: 'Architect and maintain the proprietary systems that power Elite\'s operations. Work with cutting-edge technology to build seamless, scalable platforms that give our creators and team an undeniable competitive edge.',
   },
   {
     title: 'Generator',
     icon: Wand2,
-    description: 'Find and craft AI prompts daily for our image generation pipeline. Stay on top of trends and create stunning visuals that drive engagement.',
+    description: 'Master the frontier of AI-driven content creation. Source and engineer precision prompts for our image generation pipeline daily — staying ahead of trends to produce visuals that captivate audiences and drive engagement at scale.',
   },
   {
     title: 'Social Media Manager',
     icon: Share2,
-    description: 'Manage and grow our brand presence across Instagram, TikTok, and more. Create engaging content and build our community.',
+    description: 'Own and elevate our brand presence across Instagram, TikTok, and beyond. You don\'t just post content — you build communities, shape narratives, and drive organic growth that translates directly into creator success.',
   },
   {
     title: 'General Marketing Manager',
     icon: Shield,
-    description: 'The CEO\'s right hand. Oversee operations, ensure everything runs smoothly, and manage the day-to-day of the marketing team.',
+    description: 'The strategic right hand of our CEO. You will oversee day-to-day operations, ensure executional excellence across every department, and serve as the organizational force that keeps Elite operating at its highest standard.',
   },
   {
     title: 'Content Strategist',
     icon: Palette,
-    description: 'Create the content strategy for our brand. Plan campaigns, design visuals, and craft the narrative that makes Elite stand out.',
+    description: 'Define the creative direction of the Elite brand. From campaign architecture and visual identity to long-form content planning and brand voice — you will shape how the world perceives one of the fastest-growing agencies in the industry.',
   },
 ];
 
@@ -42,8 +42,8 @@ export default function Careers() {
           <>
             <SectionHeading
               badge="Join Our Team"
-              title={<>Careers with <span className="text-primary">Elite</span></>}
-              subtitle="We're building the best creator management team in the industry. If you're talented, driven, and ready to make an impact — we want to hear from you."
+              title={<>Build Something <span className="text-primary">Extraordinary</span></>}
+              subtitle="We are assembling the most elite creator management team in the industry. If you bring rare talent, an obsession with excellence, and the drive to shape the future of the creator economy — we want to hear from you."
             />
 
             <div className="space-y-4">
@@ -61,7 +61,7 @@ export default function Careers() {
 
             <div className="mt-12 text-center">
               <p className="text-sm text-muted-foreground font-body">
-                All positions are remote-friendly. Contact us at{' '}
+                All positions are remote-friendly. Reach us directly at{' '}
                 <a href="tel:5618884869" className="text-primary">(561) 888-4869</a> or{' '}
                 <a href="mailto:elitemarketing@proton.me" className="text-primary">elitemarketing@proton.me</a>
               </p>

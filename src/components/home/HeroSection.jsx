@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Crown, Star, Sparkles } from 'lucide-react';
 
-const ticker = ['OnlyFans', 'Fanvue', 'Fansly', 'Creator Management', 'Top 1%', 'South Florida\'s Best', '3x Income Guaranteed', 'Elite Results'];
+const ticker = ['OnlyFans Management', 'Fanvue Strategy', 'Fansly Growth', 'Top 1% Creators', 'South Florida\'s Finest', '3x Income — Guaranteed', 'Elite-Level Execution', 'Luxury Creator Management'];
 
 export default function HeroSection({ heroImg }) {
   return (
@@ -12,10 +12,8 @@ export default function HeroSection({ heroImg }) {
         <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/70" />
       </div>
 
-      {/* Decorative blobs */}
       <div className="absolute top-20 right-10 w-96 h-96 rounded-full blur-3xl animate-glow pointer-events-none" style={{ background: 'rgba(116,240,237,0.12)' }} />
       <div className="absolute bottom-32 left-10 w-72 h-72 rounded-full blur-3xl animate-glow pointer-events-none" style={{ background: 'rgba(234,68,90,0.12)', animationDelay: '1.5s' }} />
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(116,240,237,0.05)' }} />
 
       <div className="relative flex-1 flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="max-w-3xl">
@@ -28,7 +26,7 @@ export default function HeroSection({ heroImg }) {
           >
             <Crown className="w-4 h-4" style={{ color: '#74F0ED' }} />
             <span className="font-display text-xs font-bold uppercase tracking-widest" style={{ color: '#74F0ED' }}>
-              #1 Agency in South Florida — 2026
+              South Florida's #1 Creator Agency — 2026
             </span>
           </motion.div>
 
@@ -51,7 +49,7 @@ export default function HeroSection({ heroImg }) {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-6 text-lg md:text-xl text-white/60 font-body leading-relaxed max-w-xl"
           >
-            Elite Digital Marketing Agency transforms creators into top earners. Specializing in OnlyFans, Fanvue & Fansly management — we handle everything so you can focus on creating.
+            Elite Digital Marketing Agency is the premier destination for creators who refuse to settle. We don't just manage — we architect success. Specializing in OnlyFans, Fanvue, and Fansly, our team handles everything while you focus on what you do best.
           </motion.p>
 
           <motion.div
@@ -73,7 +71,7 @@ export default function HeroSection({ heroImg }) {
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border font-display font-semibold text-base rounded-xl text-white transition-all duration-300 hover:bg-white/5"
               style={{ borderColor: 'rgba(234,68,90,0.4)' }}
             >
-              View Services
+              Explore Services
             </Link>
           </motion.div>
 
@@ -94,13 +92,12 @@ export default function HeroSection({ heroImg }) {
                   <Star key={i} className="w-4 h-4 fill-current" style={{ color: '#74F0ED' }} />
                 ))}
               </div>
-              <p className="text-xs text-white/40 font-body mt-0.5">Trusted by creators worldwide</p>
+              <p className="text-xs text-white/40 font-body mt-0.5">Trusted by top-earning creators worldwide</p>
             </div>
           </motion.div>
         </div>
       </div>
 
-      {/* Ticker strip */}
       <div className="relative overflow-hidden border-t border-white/10 py-3" style={{ background: 'linear-gradient(90deg, #74F0ED, #EA445A, #74F0ED)' }}>
         <motion.div
           animate={{ x: [0, -1200] }}

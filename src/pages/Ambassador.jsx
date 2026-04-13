@@ -23,7 +23,6 @@ export default function Ambassador() {
     e.preventDefault();
     setLoading(true);
 
-    // Get existing ambassadors to determine signup number
     const existing = await base44.entities.BrandAmbassador.list();
     const signupNumber = (existing?.length || 0) + 1;
     const cleanName = form.full_name.replace(/\s+/g, '').toLowerCase();
@@ -39,7 +38,7 @@ export default function Ambassador() {
 
     await base44.integrations.Core.SendEmail({
       to: 'elitemarketing@proton.me',
-      subject: `New Brand Ambassador Signup: ${form.full_name}`,
+      subject: `New Brand Ambassador: ${form.full_name}`,
       body: `
 New Brand Ambassador Signup!
 
@@ -75,12 +74,12 @@ ${form.plan_to_help}
           <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="w-10 h-10 text-primary" />
           </div>
-          <h2 className="font-serif text-3xl font-bold text-foreground mb-3">Welcome, Ambassador!</h2>
+          <h2 className="font-serif text-3xl font-bold text-foreground mb-3">Welcome to the Inner Circle.</h2>
           <p className="text-muted-foreground font-body mb-6">
-            You're officially part of the Elite family. Share your referral code and earn commission on every creator you bring in.
+            You are now an official Elite Brand Ambassador. Every creator you refer with your code earns you commission — and helps someone else access a life-changing opportunity.
           </p>
           <div className="bg-card border border-border rounded-xl p-6 mb-4">
-            <p className="text-xs text-muted-foreground font-body mb-2">Your Ambassador Code</p>
+            <p className="text-xs text-muted-foreground font-body mb-2">Your Exclusive Ambassador Code</p>
             <div className="flex items-center gap-2 justify-center">
               <code className="text-primary font-display font-bold text-lg">{ambassadorCode}</code>
               <button onClick={copyCode} className="p-2 hover:bg-muted rounded-lg transition-colors">
@@ -89,7 +88,7 @@ ${form.plan_to_help}
             </div>
           </div>
           <p className="text-xs text-muted-foreground font-body">
-            We'll be in touch at <span className="text-primary">(561) 888-4869</span> with next steps.
+            Our team will be in touch at <span className="text-primary">(561) 888-4869</span> with your full onboarding details.
           </p>
         </motion.div>
       </div>
@@ -100,20 +99,20 @@ ${form.plan_to_help}
     <div className="py-16 md:py-24">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
         <SectionHeading
-          badge="Brand Ambassador"
+          badge="Brand Ambassador Program"
           title={<>Earn With <span className="text-primary">Elite</span></>}
-          subtitle="Anyone can become a Brand Ambassador. Refer creators, earn commission on every signup. It's that simple."
+          subtitle="Our Ambassador Program is open to anyone with the drive to connect creators with an opportunity that changes lives. Refer a creator, earn commission on their success, and become part of the Elite network."
         />
 
         <div className="mb-8 p-6 rounded-xl bg-card border border-border">
-          <h3 className="font-display font-bold text-foreground mb-2 flex items-center gap-2">
-            <Share2 className="w-5 h-5 text-primary" /> How It Works
+          <h3 className="font-display font-bold text-foreground mb-3 flex items-center gap-2">
+            <Share2 className="w-5 h-5 text-primary" /> How the Program Works
           </h3>
           <ol className="space-y-2 text-sm text-muted-foreground font-body">
-            <li>1. Sign up below with your info</li>
-            <li>2. Receive your unique referral code instantly</li>
-            <li>3. Share your code with potential creators</li>
-            <li>4. Earn commission on every creator who signs up with your code</li>
+            <li>1. Complete your Ambassador registration below</li>
+            <li>2. Receive your unique referral code immediately upon submission</li>
+            <li>3. Share your code with creators who deserve more from their career</li>
+            <li>4. Earn commission every time a creator signs with Elite through your referral</li>
           </ol>
         </div>
 
@@ -157,14 +156,14 @@ ${form.plan_to_help}
           </div>
 
           <div>
-            <Label className="font-body text-sm text-muted-foreground">How do you plan to help the agency? *</Label>
+            <Label className="font-body text-sm text-muted-foreground">How do you intend to represent and grow the Elite brand? *</Label>
             <Textarea required value={form.plan_to_help} onChange={e => handleChange('plan_to_help', e.target.value)}
               className="mt-1 bg-muted border-border font-body min-h-[100px]"
-              placeholder="Tell us how you'll spread the word and bring in creators..." />
+              placeholder="Describe your network, your approach, and how you'll connect creators with Elite..." />
           </div>
 
           <Button type="submit" disabled={loading} className="w-full py-6 font-display font-bold text-base" style={{ background: '#74F0ED', color: '#000' }}>
-            {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : 'Sign Up as Ambassador'}
+            {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : 'Join the Ambassador Program'}
           </Button>
         </motion.form>
       </div>

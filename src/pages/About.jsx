@@ -3,17 +3,17 @@ import { Target, Rocket, Eye, Users, Shield, Crown } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
 
 const timeline = [
-  { year: '2016–2019', title: 'The Beginning', desc: 'Years of trial and error across every platform. Learning what works and what doesn\'t in creator marketing.' },
-  { year: '2020–2022', title: 'Perfecting the Craft', desc: 'Developed our personality-driven chatting system and emotional connection strategies that set us apart.' },
-  { year: '2023–2024', title: 'Scaling Up', desc: 'Expanded our team with top coders, strategists, and managers. Built systems that deliver consistent results.' },
-  { year: '2025–2026', title: 'The Elite Era', desc: 'Named #1 agency in South Florida. Up-and-coming CEO and management team leading the next generation of creator success.' },
+  { year: '2016–2019', title: 'The Foundation', desc: 'While others were guessing, we were studying. Years of deep immersion across every major creator platform gave us an unmatched understanding of what it truly takes to build a loyal, paying audience from the ground up.' },
+  { year: '2020–2022', title: 'Engineering the Edge', desc: 'This era defined our identity. We developed and stress-tested our proprietary personality-driven chatting system — a methodology that creates authentic emotional connections between creators and their subscribers at scale.' },
+  { year: '2023–2024', title: 'Building an Empire', desc: 'With a proven system in place, we scaled. We assembled a world-class team of strategists, developers, and creative directors — and built operational infrastructure designed to deliver elite outcomes for every single client.' },
+  { year: '2025–2026', title: 'The Apex Era', desc: 'Recognized as the #1 agency in South Florida, we are now leading the industry standard. Our CEO and leadership team represent the next generation of creator management — relentless, visionary, and uncompromising in the pursuit of your success.' },
 ];
 
 const values = [
-  { icon: Shield, title: 'Integrity First', desc: 'We\'re not here for the money — we\'re here to get you to the top. Period.' },
-  { icon: Users, title: 'Personal Touch', desc: '1-on-1 support, a whole team behind you, and a hiring process that ensures top-line service.' },
-  { icon: Target, title: 'Results Driven', desc: 'We guarantee 3x your income in the first month. Our track record speaks for itself.' },
-  { icon: Eye, title: 'Your Vision, Our Execution', desc: 'We adapt to YOUR personality, YOUR brand, YOUR goals — never a one-size-fits-all approach.' },
+  { icon: Shield, title: 'Uncompromising Integrity', desc: 'We are not motivated by commissions alone — we are driven by legacy. Every decision we make is rooted in what\'s best for the creator we serve.' },
+  { icon: Users, title: 'Concierge-Level Attention', desc: 'From your dedicated account strategist to direct CEO access, every touchpoint in the Elite experience is crafted for one purpose: your ascent.' },
+  { icon: Target, title: 'Outcome-Obsessed Strategy', desc: 'We don\'t chase vanity metrics. We engineer guaranteed, measurable income growth — because results are the only currency that matters.' },
+  { icon: Eye, title: 'Your Vision, Perfected', desc: 'We don\'t impose a formula on you. We study your brand, your voice, your audience — and architect a strategy that is unmistakably, powerfully yours.' },
 ];
 
 export default function About() {
@@ -30,8 +30,8 @@ export default function About() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Our Story"
-            title={<>Built on <span className="text-primary">Experience</span></>}
-            subtitle="5-10 years of trial and error. We've done it all and perfected the perfect marketing strategy to share with the world."
+            title={<>Forged Through <span className="text-primary">Experience</span></>}
+            subtitle="What we offer today isn't theory — it's the product of a decade spent studying, failing, iterating, and ultimately mastering the science of creator growth. Every strategy we deploy has been earned through real-world results."
           />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -78,13 +78,13 @@ export default function About() {
                   <h3 className="font-display font-bold text-xl text-foreground">The Elite Difference</h3>
                 </div>
                 <p className="text-muted-foreground font-body leading-relaxed mb-4">
-                  We make small creators become top percentile earners. We're different from other agencies because we're not here for the money — we're here to help you get to the top.
+                  We have one singular purpose: to take creators who are underperforming their true potential and transform them into top-percentile earners. Not through gimmicks or generic playbooks — but through a deeply personalized, data-driven approach that evolves with your brand.
                 </p>
                 <p className="text-muted-foreground font-body leading-relaxed mb-4">
-                  You get 1-on-1 attention if you need it and a whole team behind you. That's why we have our hiring process — we want to give you the top line of service you deserve.
+                  You receive the full weight of our team behind you — strategists, chatters, developers, and creatives operating in concert. Every role in our agency exists for one reason: to maximize your income and elevate your brand to where it deserves to be.
                 </p>
                 <p className="text-muted-foreground font-body leading-relaxed">
-                  Based in South Florida with an up-and-coming CEO and management team, plus some of the top coders in the industry. We don't just manage — we transform.
+                  Headquartered in South Florida, led by an elite management team and some of the most technically advanced developers in the creator space. We don't just manage creators — we build careers, legacies, and futures.
                 </p>
               </div>
 

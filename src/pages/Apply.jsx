@@ -64,10 +64,9 @@ ${form.explanation}
           <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="w-10 h-10 text-primary" />
           </div>
-          <h2 className="font-serif text-3xl font-bold text-foreground mb-3">Application Received!</h2>
+          <h2 className="font-serif text-3xl font-bold text-foreground mb-3">Application Received.</h2>
           <p className="text-muted-foreground font-body">
-            Thank you for applying, {form.full_name}. Our team will follow up with you within <span className="text-primary font-semibold">24-72 hours</span>. 
-            You can also reach us at <a href="tel:5618884869" className="text-primary">(561) 888-4869</a>.
+            Welcome to the beginning of something extraordinary, {form.full_name}. Our team will review your application and follow up within <span className="text-primary font-semibold">24–72 hours</span>. You may also reach us directly at <a href="tel:5618884869" className="text-primary">(561) 888-4869</a>.
           </p>
         </motion.div>
       </div>
@@ -79,8 +78,8 @@ ${form.explanation}
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
         <SectionHeading
           badge="Creator Application"
-          title="Join the Elite"
-          subtitle="Take the first step to transforming your creator career. Fill out the application below and we'll be in touch."
+          title="Begin Your Ascent"
+          subtitle="This is where your transformation starts. Complete the application below and our strategy team will personally reach out to discuss how Elite can architect your success."
         />
 
         <motion.form
@@ -141,19 +140,19 @@ ${form.explanation}
 
           <div>
             <Label className="font-body text-sm text-muted-foreground">
-              Tell us about yourself — do you have experience? Why do you want to work with Elite? *
+              Tell us about yourself — your experience, your goals, and why you're ready to join Elite *
             </Label>
             <Textarea required value={form.explanation} onChange={e => handleChange('explanation', e.target.value)}
               className="mt-1 bg-muted border-border font-body min-h-[120px]"
-              placeholder="Share your story, goals, and what you're looking for..." />
+              placeholder="Share your story, your ambitions, and what you're looking to achieve..." />
           </div>
 
           <Button type="submit" disabled={loading} className="w-full py-6 font-display font-bold text-base" style={{ background: '#74F0ED', color: '#000' }}>
-            {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : 'Submit Application'}
+            {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : 'Submit Your Application'}
           </Button>
 
           <p className="text-center text-xs text-muted-foreground font-body">
-            We will reach out within 24-72 hours. You must be 18+ to apply.
+            All applications are reviewed personally by our team. You must be 18 or older to apply. We will follow up within 24–72 hours.
           </p>
         </motion.form>
       </div>

@@ -3,22 +3,22 @@ import { Star, Quote, TrendingUp, DollarSign, Heart, Shield } from 'lucide-react
 import SectionHeading from '../components/SectionHeading';
 
 const reviews = [
-  { name: 'Ashley M.', age: 24, gender: 'F', stars: 5, text: 'Elite completely changed my life. I went from making $800/month to over $5,000 in my first month with them. The team feels like family — they actually care about my success, not just their cut.' },
-  { name: 'Marcus T.', age: 29, gender: 'M', stars: 5, text: 'I was skeptical about agencies, but Elite proved me wrong. Their personality-driven approach to my DMs tripled my subscriber count. The 1-on-1 sessions are invaluable.' },
-  { name: 'Destiny R.', age: 22, gender: 'F', stars: 5, text: 'Before Elite, I was struggling to stay consistent. Now I have a whole team handling my messages, content strategy, and marketing. I can finally breathe financially.' },
-  { name: 'Jordan K.', age: 31, gender: 'M', stars: 5, text: 'The emotional connection strategy they built for my brand was a game changer. My retention rate went through the roof. These guys know what they\'re doing.' },
-  { name: 'Mia S.', age: 26, gender: 'F', stars: 5, text: 'What makes Elite different is they treat you like a person, not a number. The CEO personally got on a call with me when I had concerns. That level of care is unmatched.' },
-  { name: 'Tyler B.', age: 34, gender: 'M', stars: 5, text: 'I tried two other agencies before Elite. Night and day difference. My income went from $2K to $8K in 6 weeks. Their chatting strategy is on another level.' },
-  { name: 'Savannah L.', age: 20, gender: 'F', stars: 5, text: 'I was brand new to the platform with zero experience. Elite took me from nothing to top 5% in two months. They handle everything — I just show up and create.' },
-  { name: 'David C.', age: 45, gender: 'M', stars: 5, text: 'At my age, I wasn\'t sure this would work. Elite\'s team built a unique persona for me that resonated perfectly. Best decision I\'ve made. Financial stability I never thought possible.' },
-  { name: 'Kayla W.', age: 28, gender: 'F', stars: 5, text: 'The PPV strategy alone has been worth it. Daily pushes, engaging conversations, long-term subscribers who actually stick around. Elite is the real deal.' },
+  { name: 'Ashley M.', age: 24, stars: 5, text: 'Elite didn\'t just change my income — they changed my life. I went from barely clearing $800 a month to generating over $5,000 in my very first month under their management. The team operates like family. They are genuinely invested in your success in a way that no other agency comes close to replicating.' },
+  { name: 'Marcus T.', age: 29, stars: 5, text: 'I had tried other agencies and left disappointed every time. Elite was a revelation. Their personality-driven approach to DM management tripled my subscriber count within weeks, and the coaching sessions completely reframed how I think about my brand. This is the real thing.' },
+  { name: 'Destiny R.', age: 22, stars: 5, text: 'I used to be overwhelmed by every aspect of the business. Consistency felt impossible. With Elite, I have an entire professional team managing my messages, my content strategy, my marketing — and I can finally create from a place of joy instead of desperation. The financial relief alone is life-changing.' },
+  { name: 'Jordan K.', age: 31, stars: 5, text: 'The emotional connection framework they built around my brand was unlike anything I had experienced before. My subscriber retention went through the roof. People don\'t just subscribe — they stay, they engage, they spend. Elite understands the psychology behind this business at a level that is genuinely impressive.' },
+  { name: 'Mia S.', age: 26, stars: 5, text: 'What separates Elite from every other agency I\'ve encountered is that they treat you as a human being with real goals — not as a revenue stream. When I had concerns, the CEO personally took my call. That level of accountability and genuine care is something I had never experienced from a business before.' },
+  { name: 'Tyler B.', age: 34, stars: 5, text: 'Two agencies before Elite. Night and day. My monthly revenue went from $2,000 to over $8,000 in six weeks. Their chatting strategy is on an entirely different level — it doesn\'t feel scripted, it feels real. That authenticity is what converts and retains at such an extraordinary rate.' },
+  { name: 'Savannah L.', age: 20, stars: 5, text: 'I came in with zero experience, zero audience, and zero confidence. Elite took me from a blank slate to the top 5% of creators in under two months. They manage everything end-to-end — I simply show up, create, and trust the process. The results have been extraordinary.' },
+  { name: 'David C.', age: 45, stars: 5, text: 'I was skeptical that this industry could work for someone my age. Elite\'s team built a persona for me that was authentic, compelling, and perfectly calibrated to resonate with my audience. The financial stability I\'ve achieved is something I genuinely never believed was possible for me.' },
+  { name: 'Kayla W.', age: 28, stars: 5, text: 'The PPV strategy alone has justified every decision I made to sign with Elite. Daily pushes, deeply personalized conversations, and subscriber relationships that actually endure over time. This is precision marketing applied to the creator economy, and no one executes it better.' },
 ];
 
 const resources = [
-  { icon: TrendingUp, title: 'Income Growth Reports', desc: 'Our creators see an average of 3x income increase in their first month. Many reach top 1% within 90 days.' },
-  { icon: DollarSign, title: 'Financial Stability', desc: 'Consistent, reliable income streams. No more feast-or-famine months. Our strategies create steady growth.' },
-  { icon: Heart, title: 'Subscriber Retention', desc: 'Our emotional connection approach leads to 85% higher retention than industry average. Real relationships, real results.' },
-  { icon: Shield, title: 'Proven Track Record', desc: '500+ creators managed, #1 agency in South Florida 2026. Our results speak louder than any pitch.' },
+  { icon: TrendingUp, title: 'Documented Income Transformation', desc: 'Our creators experience an average 3x income increase within their first 30 days — a performance benchmark we don\'t just promise, we guarantee in writing. Many go on to reach the top 1% within their first 90 days under Elite management.' },
+  { icon: DollarSign, title: 'Engineered Financial Consistency', desc: 'Feast-or-famine income cycles are a thing of the past under Elite management. Our multi-channel revenue strategies create layered, predictable income streams that compound over time — delivering the financial stability your career deserves.' },
+  { icon: Heart, title: 'Industry-Leading Subscriber Retention', desc: 'Our emotional architecture methodology drives an 85% higher subscriber retention rate than the industry average. We don\'t build audiences — we cultivate communities of loyal, long-term paying supporters with genuine investment in your brand.' },
+  { icon: Shield, title: 'An Unmatched Track Record', desc: 'Hundreds of creators transformed. Recognized as South Florida\'s premier creator management agency in 2026. Our performance record is not a marketing asset — it is the foundation of trust that every relationship at Elite is built upon.' },
 ];
 
 export default function Reviews() {
@@ -27,9 +27,9 @@ export default function Reviews() {
       <section className="py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            badge="Success Stories"
-            title={<>Real People. <span className="text-primary">Real Results.</span></>}
-            subtitle="Don't take our word for it — hear from the creators who've transformed their lives with Elite Digital Marketing."
+            badge="Creator Testimonials"
+            title={<>The Results <span className="text-primary">Speak for Themselves.</span></>}
+            subtitle="Every review below represents a creator who made the decision to stop settling and start ascending. These are not curated success stories — they are the consistent, expected outcome of partnering with Elite."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -66,9 +66,9 @@ export default function Reviews() {
       <section className="py-20 md:py-32 bg-card border-y border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            badge="Resources"
-            title={<>Why Creators <span className="text-primary">Trust Us</span></>}
-            subtitle="The numbers don't lie. Here's how Elite Digital Marketing delivers real, measurable results."
+            badge="Performance Metrics"
+            title={<>Why Elite Is the <span className="text-primary">Industry Standard</span></>}
+            subtitle="Behind every testimonial is a body of data, systems, and relentless execution that makes these outcomes not the exception — but the rule. Here is what Elite's performance looks like at scale."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
