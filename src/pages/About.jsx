@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Target, Rocket, Eye, Users, Shield, Crown } from 'lucide-react';
+import ResultsPortfolio from '../components/about/ResultsPortfolio';
 import SectionHeading from '../components/SectionHeading';
 
 const timeline = [
@@ -159,6 +160,7 @@ export default function About() {
           </div>
         </div>
       </section>
+      <ResultsPortfolio />
     </div>
   );
 }
