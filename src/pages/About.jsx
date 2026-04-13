@@ -21,6 +21,57 @@ export default function About() {
 
   return (
     <div>
+
+      {/* About Elite — Brand Statement Section */}
+      <section className="relative py-20 md:py-28 overflow-hidden bg-black">
+        <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(116,240,237,0.06)' }} />
+        <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(234,68,90,0.06)' }} />
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="rounded-2xl border p-8 md:p-14"
+            style={{ borderColor: 'rgba(116,240,237,0.15)', background: 'rgba(116,240,237,0.03)' }}
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border mb-8 text-xs font-display font-bold uppercase tracking-widest"
+              style={{ borderColor: 'rgba(116,240,237,0.3)', background: 'rgba(116,240,237,0.08)', color: '#74F0ED' }}>
+              Who We Are
+            </div>
+
+            <div className="space-y-6 text-white/70 font-body text-base leading-relaxed">
+              <p>
+                Elite Digital Marketing Agency is a <span className="text-white font-semibold">commission-based powerhouse founded in 2025</span> — built on extensive research and proven experimentation in the trade for over three years. We've been watching, learning, listening, and running strategy tests until we finally cracked the code.
+              </p>
+              <p>
+                Our mission is simple: <span className="font-semibold" style={{ color: '#74F0ED' }}>guarantee you'll triple your monthly revenue — or we don't consider the work done.</span> With a team dedicated <span className="text-white font-semibold">24/7</span>, we don't chase quick wins — we build momentum that compounds.
+              </p>
+              <p>
+                So what makes Elite ranked <span className="text-white font-semibold">#1 across the board?</span> Most agencies want money in hand before the conversation. Not us. We don't lock you into subscriptions or force you into long-term commitments. <span className="font-semibold" style={{ color: '#74F0ED' }}>We only get paid through commissions based on the service levels we deliver.</span> That's because we're confident in our process — and we hire only the best of the best. No fill-ins. No second-rate talent.
+              </p>
+              <p>
+                We're based in <span className="text-white font-semibold">South Florida</span>, but we welcome applicants from <span className="text-white font-semibold">anywhere in the United States</span> as long as you're <span className="text-white font-semibold">18+</span>. Whether you're an experienced creator with no time or resources to spare — or you're brand new to the industry and starting from scratch — we'll sit with you, guide you, and work patiently until you're on top.
+              </p>
+
+              <div className="border-t border-white/10 pt-6 mt-6 flex flex-col sm:flex-row sm:items-center gap-4">
+                <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0 font-display font-black text-xl" style={{ background: 'linear-gradient(135deg, #74F0ED, #EA445A)', color: '#000' }}>MT</div>
+                <div>
+                  <p className="text-white font-display font-bold text-lg">Meaghan Taylor</p>
+                  <p className="text-sm" style={{ color: '#74F0ED' }}>Owner & CEO — Elite Digital Marketing Agency</p>
+                </div>
+              </div>
+
+              <div className="pt-2 border-t border-white/10">
+                <p className="text-white/60 italic">
+                  "If you want real results, real accountability, and a team that's ready to go 24/7 — <span className="text-white font-semibold not-italic">Elite is ready for you.</span>"
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img src={aboutImg} alt="Elite Digital Office" className="w-full h-full object-cover opacity-20" />
