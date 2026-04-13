@@ -6,29 +6,28 @@ const ticker = ['OnlyFans', 'Fanvue', 'Fansly', 'Creator Management', 'Top 1%', 
 
 export default function HeroSection({ heroImg }) {
   return (
-    <section className="relative min-h-[92vh] flex flex-col overflow-hidden bg-foreground">
-      {/* Background image */}
+    <section className="relative min-h-[92vh] flex flex-col overflow-hidden bg-black">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Elite" className="w-full h-full object-cover opacity-30 mix-blend-luminosity" />
-        <div className="absolute inset-0 bg-gradient-to-br from-foreground via-foreground/90 to-secondary/60" />
+        <img src={heroImg} alt="Elite" className="w-full h-full object-cover opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-black/70" />
       </div>
 
       {/* Decorative blobs */}
-      <div className="absolute top-20 right-10 w-80 h-80 rounded-full bg-primary/30 blur-3xl animate-glow pointer-events-none" />
-      <div className="absolute bottom-32 left-10 w-60 h-60 rounded-full bg-accent/25 blur-3xl animate-glow pointer-events-none" style={{ animationDelay: '1.5s' }} />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-secondary/10 blur-3xl pointer-events-none" />
+      <div className="absolute top-20 right-10 w-96 h-96 rounded-full blur-3xl animate-glow pointer-events-none" style={{ background: 'rgba(116,240,237,0.12)' }} />
+      <div className="absolute bottom-32 left-10 w-72 h-72 rounded-full blur-3xl animate-glow pointer-events-none" style={{ background: 'rgba(234,68,90,0.12)', animationDelay: '1.5s' }} />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(116,240,237,0.05)' }} />
 
-      {/* Main content */}
       <div className="relative flex-1 flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/40 bg-primary/10 backdrop-blur-sm mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-8"
+            style={{ borderColor: 'rgba(116,240,237,0.3)', background: 'rgba(116,240,237,0.08)' }}
           >
-            <Crown className="w-4 h-4 text-primary" />
-            <span className="text-primary font-display text-xs font-bold uppercase tracking-widest">
+            <Crown className="w-4 h-4" style={{ color: '#74F0ED' }} />
+            <span className="font-display text-xs font-bold uppercase tracking-widest" style={{ color: '#74F0ED' }}>
               #1 Agency in South Florida — 2026
             </span>
           </motion.div>
@@ -41,7 +40,7 @@ export default function HeroSection({ heroImg }) {
           >
             Your Brand.
             <br />
-            <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent drop-shadow-lg">
+            <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(135deg, #74F0ED, #EA445A)' }}>
               Elevated.
             </span>
           </motion.h1>
@@ -50,7 +49,7 @@ export default function HeroSection({ heroImg }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-6 text-lg md:text-xl text-white/70 font-body leading-relaxed max-w-xl"
+            className="mt-6 text-lg md:text-xl text-white/60 font-body leading-relaxed max-w-xl"
           >
             Elite Digital Marketing Agency transforms creators into top earners. Specializing in OnlyFans, Fanvue & Fansly management — we handle everything so you can focus on creating.
           </motion.p>
@@ -63,14 +62,16 @@ export default function HeroSection({ heroImg }) {
           >
             <Link
               to="/apply"
-              className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-amber-400 text-white font-display font-bold text-base rounded-xl shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:scale-105 transition-all duration-300"
+              className="group inline-flex items-center justify-center gap-2 px-8 py-4 font-display font-bold text-base rounded-xl transition-all duration-300 hover:scale-105"
+              style={{ background: 'linear-gradient(135deg, #74F0ED, #5dd8d5)', color: '#000000', boxShadow: '0 8px 30px rgba(116,240,237,0.3)' }}
             >
               Apply as Creator
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/services"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/20 bg-white/10 backdrop-blur-sm text-white font-display font-semibold text-base rounded-xl hover:bg-white/20 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border font-display font-semibold text-base rounded-xl text-white transition-all duration-300 hover:bg-white/5"
+              style={{ borderColor: 'rgba(234,68,90,0.4)' }}
             >
               View Services
             </Link>
@@ -83,31 +84,31 @@ export default function HeroSection({ heroImg }) {
             className="mt-12 flex items-center gap-6"
           >
             <div className="flex -space-x-2">
-              {['bg-gradient-to-br from-primary to-amber-300', 'bg-gradient-to-br from-secondary to-purple-400', 'bg-gradient-to-br from-accent to-pink-400', 'bg-gradient-to-br from-primary to-secondary', 'bg-gradient-to-br from-accent to-primary'].map((g, i) => (
-                <div key={i} className={`w-10 h-10 rounded-full ${g} border-2 border-foreground/50`} />
+              {['rgba(116,240,237,0.7)', 'rgba(234,68,90,0.7)', 'rgba(116,240,237,0.5)', 'rgba(234,68,90,0.5)', 'rgba(116,240,237,0.9)'].map((bg, i) => (
+                <div key={i} className="w-10 h-10 rounded-full border-2 border-black" style={{ background: bg }} />
               ))}
             </div>
             <div>
               <div className="flex items-center gap-1">
                 {[1, 2, 3, 4, 5].map(i => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                  <Star key={i} className="w-4 h-4 fill-current" style={{ color: '#74F0ED' }} />
                 ))}
               </div>
-              <p className="text-xs text-white/50 font-body mt-0.5">Trusted by creators worldwide</p>
+              <p className="text-xs text-white/40 font-body mt-0.5">Trusted by creators worldwide</p>
             </div>
           </motion.div>
         </div>
       </div>
 
       {/* Ticker strip */}
-      <div className="relative overflow-hidden border-t border-white/10 bg-gradient-to-r from-primary via-accent to-secondary py-3">
+      <div className="relative overflow-hidden border-t border-white/10 py-3" style={{ background: 'linear-gradient(90deg, #74F0ED, #EA445A, #74F0ED)' }}>
         <motion.div
           animate={{ x: [0, -1200] }}
           transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
           className="flex gap-12 whitespace-nowrap"
         >
           {[...ticker, ...ticker, ...ticker].map((item, i) => (
-            <span key={i} className="text-white font-display font-bold text-sm uppercase tracking-widest flex items-center gap-3">
+            <span key={i} className="text-black font-display font-bold text-sm uppercase tracking-widest flex items-center gap-3">
               <Sparkles className="w-3 h-3 opacity-70" /> {item}
             </span>
           ))}
