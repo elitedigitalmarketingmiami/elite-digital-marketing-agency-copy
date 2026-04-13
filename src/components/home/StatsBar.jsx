@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: '500+', label: 'Creators Managed' },
+  { value: '#1', label: 'Agency in South Florida' },
   { value: '3x', label: 'Avg. Income Boost' },
-  { value: '#1', label: 'South Florida Agency' },
+  { value: '2026', label: 'Best Agency Award' },
   { value: '24/7', label: 'Dedicated Support' },
 ];
 
