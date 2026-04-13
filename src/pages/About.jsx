@@ -17,7 +17,7 @@ const values = [
 ];
 
 export default function About() {
-  const aboutImg = '/__generating__/img_39e735dbc458.png';
+  const aboutImg = 'https://media.base44.com/images/public/69dcf9f1af90480281ca6ada/0cc69edf5_generated_9719f702.png';
 
   return (
     <div>

@@ -55,7 +55,7 @@ const tiers = [
 ];
 
 export default function Services() {
-  const servicesImg = '/__generating__/img_5694c15fd14d.png';
+  const servicesImg = 'https://media.base44.com/images/public/69dcf9f1af90480281ca6ada/069426b76_generated_498d01f4.png';
 
   return (
     <div>
