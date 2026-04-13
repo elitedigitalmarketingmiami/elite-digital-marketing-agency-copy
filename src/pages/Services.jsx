@@ -114,7 +114,8 @@ export default function Services() {
 
                 <Link
                   to="/apply"
-                  className="group flex items-center justify-center gap-2 w-full py-3.5 bg-primary text-primary-foreground font-display font-bold text-sm rounded-lg hover:opacity-90 transition-all"
+                  className="group flex items-center justify-center gap-2 w-full py-3.5 font-display font-bold text-sm rounded-lg transition-all hover:scale-105"
+              style={{ background: '#74F0ED', color: '#000' }}
                 >
                   Get Started <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>

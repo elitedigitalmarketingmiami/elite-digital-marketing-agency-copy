@@ -148,7 +148,7 @@ ${form.explanation}
               placeholder="Share your story, goals, and what you're looking for..." />
           </div>
 
-          <Button type="submit" disabled={loading} className="w-full py-6 font-display font-bold text-base bg-primary text-primary-foreground">
+          <Button type="submit" disabled={loading} className="w-full py-6 font-display font-bold text-base" style={{ background: '#74F0ED', color: '#000' }}>
             {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : 'Submit Application'}
           </Button>
 

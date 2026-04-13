@@ -43,7 +43,8 @@ export default function Navbar() {
             ))}
             <Link
               to="/apply"
-              className="ml-3 px-6 py-2.5 bg-primary text-primary-foreground font-display font-semibold text-sm rounded-lg hover:opacity-90 transition-all duration-300"
+              className="ml-3 px-6 py-2.5 font-display font-semibold text-sm rounded-lg hover:opacity-90 transition-all duration-300"
+            style={{ background: '#74F0ED', color: '#000' }}
             >
               Apply Now
             </Link>
@@ -81,7 +82,8 @@ export default function Navbar() {
               <Link
                 to="/apply"
                 onClick={() => setOpen(false)}
-                className="block text-center mt-3 px-6 py-3 bg-primary text-primary-foreground font-display font-semibold text-sm rounded-lg"
+                className="block text-center mt-3 px-6 py-3 font-display font-semibold text-sm rounded-lg"
+              style={{ background: '#74F0ED', color: '#000' }}
               >
                 Apply Now
               </Link>

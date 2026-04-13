@@ -163,7 +163,7 @@ ${form.plan_to_help}
               placeholder="Tell us how you'll spread the word and bring in creators..." />
           </div>
 
-          <Button type="submit" disabled={loading} className="w-full py-6 font-display font-bold text-base bg-primary text-primary-foreground">
+          <Button type="submit" disabled={loading} className="w-full py-6 font-display font-bold text-base" style={{ background: '#74F0ED', color: '#000' }}>
             {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : 'Sign Up as Ambassador'}
           </Button>
         </motion.form>
