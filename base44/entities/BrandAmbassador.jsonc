@@ -1,0 +1,54 @@
+{
+  "name": "BrandAmbassador",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "age": {
+      "type": "number",
+      "title": "Age"
+    },
+    "current_workplace": {
+      "type": "string",
+      "title": "Current Workplace"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone Number"
+    },
+    "plan_to_help": {
+      "type": "string",
+      "title": "Plan to Help"
+    },
+    "ambassador_code": {
+      "type": "string",
+      "title": "Ambassador Code"
+    },
+    "signup_number": {
+      "type": "number",
+      "title": "Signup Number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "title": "Status"
+    }
+  },
+  "required": [
+    "full_name",
+    "age",
+    "current_workplace",
+    "email",
+    "phone",
+    "plan_to_help"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "CareerApplication",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone Number"
+    },
+    "position": {
+      "type": "string",
+      "enum": [
+        "Coder",
+        "Generator",
+        "Social Media Manager",
+        "General Marketing Manager",
+        "Content Strategist"
+      ],
+      "title": "Position"
+    },
+    "experience_years": {
+      "type": "number",
+      "title": "Years of Experience"
+    },
+    "portfolio_link": {
+      "type": "string",
+      "title": "Portfolio Link"
+    },
+    "skills": {
+      "type": "string",
+      "title": "Key Skills"
+    },
+    "why_elite": {
+      "type": "string",
+      "title": "Why Elite?"
+    },
+    "availability": {
+      "type": "string",
+      "title": "Availability"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "reviewed",
+        "interview",
+        "hired",
+        "rejected"
+      ],
+      "title": "Status"
+    }
+  },
+  "required": [
+    "full_name",
+    "email",
+    "phone",
+    "position",
+    "skills",
+    "why_elite"
+  ]
+}

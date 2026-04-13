@@ -1,0 +1,57 @@
+{
+  "name": "CreatorApplication",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "age": {
+      "type": "number",
+      "title": "Age"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "state": {
+      "type": "string",
+      "title": "State"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone Number"
+    },
+    "has_experience": {
+      "type": "boolean",
+      "title": "Has Experience"
+    },
+    "explanation": {
+      "type": "string",
+      "title": "Brief Explanation"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "contacted",
+        "approved",
+        "rejected"
+      ],
+      "title": "Status"
+    }
+  },
+  "required": [
+    "full_name",
+    "age",
+    "city",
+    "state",
+    "email",
+    "phone",
+    "explanation"
+  ]
+}
