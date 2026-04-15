@@ -13,6 +13,7 @@ import About from './pages/About';
 import Reviews from './pages/Reviews';
 import Ambassador from './pages/Ambassador';
 import Careers from './pages/Careers';
+import Admin from './pages/Admin';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -48,6 +49,7 @@ const AuthenticatedApp = () => {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/ambassador" element={<Ambassador />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
