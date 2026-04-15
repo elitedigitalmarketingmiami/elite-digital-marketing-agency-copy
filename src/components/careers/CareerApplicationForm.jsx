@@ -57,7 +57,8 @@ export default function CareerApplicationForm({ position, onBack }) {
 
     await base44.integrations.Core.SendEmail({
       to: 'elitemarketing@proton.me',
-      subject: `New Career Application: ${position} — ${form.full_name}`,
+      from_name: 'Elite Digital Marketing',
+      subject: `[NEW CAREER APPLICATION] ${position} — ${form.full_name}`,
       body: `
 New Career Application for: ${position}
 

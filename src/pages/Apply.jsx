@@ -29,10 +29,7 @@ export default function Apply() {
       status: 'new'
     });
 
-    await base44.integrations.Core.SendEmail({
-      to: 'elitemarketing@proton.me',
-      subject: `New Creator Application: ${form.full_name}`,
-      body: `
+    const emailBody = `
 New Creator Application Received!
 
 Name: ${form.full_name}
@@ -46,7 +43,20 @@ Why they want to work with Elite:
 ${form.explanation}
 
 — Elite Digital Marketing Agency
-      `.trim()
+    `.trim();
+
+    await base44.integrations.Core.SendEmail({
+      to: 'elitemarketing@proton.me',
+      from_name: 'Elite Digital Marketing',
+      subject: `[NEW APPLICATION] Creator Application: ${form.full_name}`,
+      body: emailBody
+    });
+
+    await base44.integrations.Core.SendEmail({
+      to: form.email,
+      from_name: 'Elite Digital Marketing Agency',
+      subject: `We received your application, ${form.full_name}!`,
+      body: `Hi ${form.full_name},\n\nThank you for applying to Elite Digital Marketing Agency! We've received your application and our team will review it and follow up within 24–72 hours.\n\nYou can also reach us directly:\nPhone: (561) 888-4869\nEmail: elitemarketing@proton.me\n\n— Elite Digital Marketing Agency`
     });
 
     setLoading(false);

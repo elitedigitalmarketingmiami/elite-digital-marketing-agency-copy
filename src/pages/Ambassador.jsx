@@ -38,7 +38,8 @@ export default function Ambassador() {
 
     await base44.integrations.Core.SendEmail({
       to: 'elitemarketing@proton.me',
-      subject: `New Brand Ambassador: ${form.full_name}`,
+      from_name: 'Elite Digital Marketing',
+      subject: `[NEW AMBASSADOR] ${form.full_name}`,
       body: `
 New Brand Ambassador Signup!
 
