@@ -91,7 +91,7 @@ ${form.why_elite}
         <h2 className="font-serif text-3xl font-bold text-foreground mb-3">Application Submitted!</h2>
         <p className="text-muted-foreground font-body">
           Thank you for applying for the <span className="text-primary font-semibold">{position}</span> position. 
-          We'll review your application and follow up within 24-72 hours at <a href="tel:5618884869" className="text-primary">(561) 888-4869</a>.
+          We'll review your application and follow up within 24-72 hours at <a href="tel:9548017858" className="text-primary">(954) 801-7858</a>.
         </p>
         <Button onClick={onBack} variant="outline" className="mt-6 font-display">View Other Positions</Button>
       </motion.div>

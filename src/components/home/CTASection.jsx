@@ -61,7 +61,7 @@ export default function CTASection() {
               <p className="text-white/30 text-xs font-display uppercase tracking-widest mb-4">Get in Touch</p>
               <div className="space-y-4">
                 {[
-                  { href: 'tel:5618884869', icon: Phone, label: '(561) 888-4869', color: '#74F0ED' },
+                  { href: 'tel:9548017858', icon: Phone, label: '(954) 801-7858', color: '#74F0ED' },
                   { href: 'mailto:elitemarketing@proton.me', icon: Mail, label: 'elitemarketing@proton.me', color: '#EA445A' },
                   { href: 'https://instagram.com/elite_glocreatoragency', icon: Instagram, label: '@elite_glocreatoragency', color: '#74F0ED', external: true },
                 ].map(item => (

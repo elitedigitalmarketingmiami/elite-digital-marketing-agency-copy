@@ -89,7 +89,7 @@ ${form.plan_to_help}
             </div>
           </div>
           <p className="text-xs text-muted-foreground font-body">
-            Our team will be in touch at <span className="text-primary">(561) 888-4869</span> with your full onboarding details.
+            Our team will be in touch at <span className="text-primary">(954) 801-7858</span> with your full onboarding details.
           </p>
         </motion.div>
       </div>

@@ -76,7 +76,7 @@ ${form.explanation}
           </div>
           <h2 className="font-serif text-3xl font-bold text-foreground mb-3">Application Received.</h2>
           <p className="text-muted-foreground font-body">
-            Welcome to the beginning of something extraordinary, {form.full_name}. Our team will review your application and follow up within <span className="text-primary font-semibold">24–72 hours</span>. You may also reach us directly at <a href="tel:5618884869" className="text-primary">(561) 888-4869</a>.
+            Welcome to the beginning of something extraordinary, {form.full_name}. Our team will review your application and follow up within <span className="text-primary font-semibold">24–72 hours</span>. You may also reach us directly at <a href="tel:9548017858" className="text-primary">(954) 801-7858</a>.
           </p>
         </motion.div>
       </div>
