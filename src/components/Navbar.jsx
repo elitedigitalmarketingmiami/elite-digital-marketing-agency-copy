@@ -17,7 +17,7 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-xl border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-border" style={{ background: 'rgba(248,245,240,0.95)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-2">
@@ -44,7 +44,7 @@ export default function Navbar() {
             <Link
               to="/apply"
               className="ml-3 px-6 py-2.5 font-display font-semibold text-sm rounded-lg hover:opacity-90 transition-all duration-300"
-            style={{ background: '#74F0ED', color: '#000' }}
+            style={{ background: 'linear-gradient(135deg, #C9A96E, #a8845a)', color: '#FFFFFF' }}
             >
               Apply Now
             </Link>
@@ -83,7 +83,7 @@ export default function Navbar() {
                 to="/apply"
                 onClick={() => setOpen(false)}
                 className="block text-center mt-3 px-6 py-3 font-display font-semibold text-sm rounded-lg"
-              style={{ background: '#74F0ED', color: '#000' }}
+              style={{ background: 'linear-gradient(135deg, #C9A96E, #a8845a)', color: '#FFFFFF' }}
               >
                 Apply Now
               </Link>

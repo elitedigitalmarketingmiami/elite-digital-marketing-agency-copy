@@ -12,7 +12,7 @@ export default function SectionHeading({ badge, title, subtitle, center = true }
       {badge && (
         <span
           className="inline-block px-4 py-1.5 text-xs font-display font-bold uppercase tracking-widest rounded-full mb-4 border"
-          style={{ borderColor: 'rgba(116,240,237,0.3)', background: 'rgba(116,240,237,0.08)', color: '#74F0ED' }}
+          style={{ borderColor: 'rgba(201,169,110,0.4)', background: 'rgba(201,169,110,0.1)', color: '#C9A96E' }}
         >
           {badge}
         </span>
