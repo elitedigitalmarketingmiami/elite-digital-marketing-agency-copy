@@ -118,7 +118,7 @@ export default function Services() {
                   className="group flex items-center justify-center gap-2 w-full py-3.5 font-display font-bold text-sm rounded-lg transition-all hover:scale-105"
                   style={{ background: '#74F0ED', color: '#000' }}
                 >
-                  Begin Your Ascent <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  { tier.commission === '20%' ? 'Step Into Elite Elevation' : tier.commission === '30%' ? 'Enter the Top Tier' : 'This Is Where Growth Gets Serious' } <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </motion.div>
             ))}
