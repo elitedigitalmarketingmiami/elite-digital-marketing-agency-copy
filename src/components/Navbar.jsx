@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Reviews', path: '/reviews' },
   { label: 'Careers', path: '/careers' },
   { label: 'Ambassador', path: '/ambassador' },
+  { label: 'Join Us', path: '/join' },
 ];
 
 export default function Navbar() {

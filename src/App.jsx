@@ -15,6 +15,7 @@ import Ambassador from './pages/Ambassador';
 import Careers from './pages/Careers';
 import Admin from './pages/Admin';
 import CreatorChat from './pages/CreatorChat';
+import JoinChat from './pages/JoinChat';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -52,6 +53,7 @@ const AuthenticatedApp = () => {
         <Route path="/careers" element={<Careers />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/growth" element={<CreatorChat />} />
+        <Route path="/join" element={<JoinChat />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
