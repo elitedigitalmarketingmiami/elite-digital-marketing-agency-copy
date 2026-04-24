@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Crown } from 'lucide-react';
+import { Menu, X, Crown, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
@@ -44,8 +44,15 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
+              to="/book"
+              className="ml-2 px-4 py-2.5 font-display font-semibold text-sm rounded-lg border transition-all duration-300 flex items-center gap-1.5"
+              style={{ borderColor: 'rgba(201,169,110,0.5)', color: '#C9A96E' }}
+            >
+              <Calendar className="w-3.5 h-3.5" /> Book a Call
+            </Link>
+            <Link
               to="/apply"
-              className="ml-3 px-6 py-2.5 font-display font-semibold text-sm rounded-lg hover:opacity-90 transition-all duration-300"
+              className="ml-2 px-6 py-2.5 font-display font-semibold text-sm rounded-lg hover:opacity-90 transition-all duration-300"
             style={{ background: 'linear-gradient(135deg, #C9A96E, #a8845a)', color: '#FFFFFF' }}
             >
               Apply Now
@@ -82,9 +89,17 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
+                to="/book"
+                onClick={() => setOpen(false)}
+                className="block text-center mt-2 px-6 py-3 font-display font-semibold text-sm rounded-lg border flex items-center justify-center gap-2"
+                style={{ borderColor: 'rgba(201,169,110,0.4)', color: '#C9A96E' }}
+              >
+                <Calendar className="w-4 h-4" /> Book a Discovery Call
+              </Link>
+              <Link
                 to="/apply"
                 onClick={() => setOpen(false)}
-                className="block text-center mt-3 px-6 py-3 font-display font-semibold text-sm rounded-lg"
+                className="block text-center mt-2 px-6 py-3 font-display font-semibold text-sm rounded-lg"
               style={{ background: 'linear-gradient(135deg, #C9A96E, #a8845a)', color: '#FFFFFF' }}
               >
                 Apply Now

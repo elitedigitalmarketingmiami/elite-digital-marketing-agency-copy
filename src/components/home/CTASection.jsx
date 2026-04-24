@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Crown, Phone, Mail, Instagram } from 'lucide-react';
+import { ArrowRight, Crown, Phone, Mail, Instagram, Calendar } from 'lucide-react';
+import BookingModal from '../booking/BookingModal';
 
 export default function CTASection() {
+  const [bookingOpen, setBookingOpen] = useState(false);
+
   return (
     <section className="py-20 md:py-32 relative overflow-hidden" style={{ background: '#2B2B2B' }}>
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(201,169,110,0.08)' }} />
@@ -46,6 +50,13 @@ export default function CTASection() {
               >
                 Become Ambassador
               </Link>
+              <button
+                onClick={() => setBookingOpen(true)}
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border font-display font-semibold rounded-xl transition-all hover:bg-white/5"
+                style={{ borderColor: 'rgba(201,169,110,0.3)', color: '#C9A96E' }}
+              >
+                <Calendar className="w-4 h-4" /> Book a Discovery Call
+              </button>
             </div>
           </motion.div>
 
@@ -86,6 +97,7 @@ export default function CTASection() {
           </motion.div>
         </div>
       </div>
+      <BookingModal isOpen={bookingOpen} onClose={() => setBookingOpen(false)} defaultTier="General" />
     </section>
   );
 }

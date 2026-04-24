@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Check, Crown, Sparkles, Zap, ArrowRight } from 'lucide-react';
+import { Check, Crown, Sparkles, Zap, ArrowRight, Calendar } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
+import BookingModal from '../components/booking/BookingModal';
 
 const tiers = [
   {
@@ -56,6 +58,8 @@ const tiers = [
 ];
 
 export default function Services() {
+  const [bookingOpen, setBookingOpen] = useState(false);
+  const [selectedTier, setSelectedTier] = useState('General');
   const servicesImg = 'https://media.base44.com/images/public/69dcf9f1af90480281ca6ada/069426b76_generated_498d01f4.png';
 
   return (
@@ -113,13 +117,22 @@ export default function Services() {
                   ))}
                 </ul>
 
-                <Link
-                  to="/apply"
-                  className="group flex items-center justify-center gap-2 w-full py-3.5 font-display font-bold text-sm rounded-lg transition-all hover:scale-105"
-                  style={{ background: '#74F0ED', color: '#000' }}
-                >
-                  { tier.commission === '20%' ? 'Step Into Elite Elevation' : tier.commission === '30%' ? 'Enter the Top Tier' : 'This Is Where Growth Gets Serious' } <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                <div className="flex flex-col gap-2">
+                  <Link
+                    to="/apply"
+                    className="group flex items-center justify-center gap-2 w-full py-3.5 font-display font-bold text-sm rounded-lg transition-all hover:scale-105"
+                    style={{ background: '#74F0ED', color: '#000' }}
+                  >
+                    { tier.commission === '20%' ? 'Step Into Elite Elevation' : tier.commission === '30%' ? 'Enter the Top Tier' : 'This Is Where Growth Gets Serious' } <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  <button
+                    onClick={() => { setSelectedTier(tier.name); setBookingOpen(true); }}
+                    className="group flex items-center justify-center gap-2 w-full py-3 font-display font-semibold text-sm rounded-lg transition-all hover:scale-105 border"
+                    style={{ borderColor: 'rgba(201,169,110,0.4)', color: '#C9A96E', background: 'rgba(201,169,110,0.06)' }}
+                  >
+                    <Calendar className="w-3.5 h-3.5" /> Book a Discovery Call
+                  </button>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -131,6 +144,8 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      <BookingModal isOpen={bookingOpen} onClose={() => setBookingOpen(false)} defaultTier={selectedTier} />
     </div>
   );
 }

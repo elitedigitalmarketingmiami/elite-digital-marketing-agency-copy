@@ -1,0 +1,62 @@
+{
+  "name": "Appointment",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Client's full name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Client's email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Client's phone number"
+    },
+    "service_tier": {
+      "type": "string",
+      "enum": [
+        "Growth",
+        "Premium",
+        "Elite",
+        "General"
+      ],
+      "default": "General",
+      "description": "Which service tier the client is interested in"
+    },
+    "date": {
+      "type": "string",
+      "description": "Appointment date in YYYY-MM-DD format"
+    },
+    "time_slot": {
+      "type": "string",
+      "description": "Selected time slot (e.g. 10:00 AM)"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Any additional notes from the client"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "cancelled",
+        "completed"
+      ],
+      "default": "pending",
+      "description": "Status of the appointment"
+    },
+    "instagram_handle": {
+      "type": "string",
+      "description": "Client's Instagram handle (optional)"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "date",
+    "time_slot"
+  ]
+}

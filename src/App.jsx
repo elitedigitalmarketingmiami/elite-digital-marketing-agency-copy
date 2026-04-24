@@ -17,6 +17,7 @@ import Admin from './pages/Admin';
 import CreatorChat from './pages/CreatorChat';
 import JoinChat from './pages/JoinChat';
 import CreatorDashboard from './pages/CreatorDashboard';
+import Book from './pages/Book';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -56,6 +57,7 @@ const AuthenticatedApp = () => {
         <Route path="/growth" element={<CreatorChat />} />
         <Route path="/join" element={<JoinChat />} />
         <Route path="/dashboard" element={<CreatorDashboard />} />
+        <Route path="/book" element={<Book />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
