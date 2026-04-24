@@ -1,0 +1,69 @@
+{
+  "name": "CreatorStats",
+  "type": "object",
+  "properties": {
+    "creator_email": {
+      "type": "string",
+      "title": "Creator Email"
+    },
+    "creator_name": {
+      "type": "string",
+      "title": "Creator Name"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date"
+    },
+    "daily_revenue": {
+      "type": "number",
+      "title": "Daily Revenue ($)"
+    },
+    "new_subscribers": {
+      "type": "number",
+      "title": "New Subscribers"
+    },
+    "total_subscribers": {
+      "type": "number",
+      "title": "Total Subscribers"
+    },
+    "messages_sent": {
+      "type": "number",
+      "title": "Messages Sent"
+    },
+    "ppv_revenue": {
+      "type": "number",
+      "title": "PPV Revenue ($)"
+    },
+    "tips_revenue": {
+      "type": "number",
+      "title": "Tips Revenue ($)"
+    },
+    "subscription_revenue": {
+      "type": "number",
+      "title": "Subscription Revenue ($)"
+    },
+    "top_content_description": {
+      "type": "string",
+      "title": "Top Content Description"
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "OnlyFans",
+        "Fanvue",
+        "Fansly"
+      ],
+      "title": "Platform"
+    },
+    "churn_count": {
+      "type": "number",
+      "title": "Unsubscribes"
+    }
+  },
+  "required": [
+    "creator_email",
+    "date",
+    "platform"
+  ]
+}
