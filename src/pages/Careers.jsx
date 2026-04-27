@@ -62,7 +62,7 @@ export default function Careers() {
             <div className="mt-12 text-center">
               <p className="text-sm text-muted-foreground font-body">
                 All positions are remote-friendly. Reach us directly at{' '}
-                <a href="tel:5618884869" className="text-primary">(561) 888-4869</a> or{' '}
+                <a href="tel:9548017858" className="text-primary">(954) 801-7858</a> or{' '}
                 <a href="mailto:elitemarketing@proton.me" className="text-primary">elitemarketing@proton.me</a>
               </p>
             </div>
